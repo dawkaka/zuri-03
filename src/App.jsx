@@ -3,30 +3,13 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { Land } from './components/lands'
 import { Footer } from './components/footer'
+import { NavBar } from './components/navbar'
 
 function App() {
 
   return (
     <div className="App">
-      <header>
-        <div className="widthControlWrapper">
-          <div className="widthControl">
-            <nav>
-              <img src='./Group.svg' />
-              <ul>
-                <li><a href="" className="nav-link">Home</a></li>
-                <li><a href="" className="nav-link">Place to stay</a></li>
-                <li><a href="" className="nav-link">NFTs</a></li>
-                <li><a href="" className="nav-link">Community</a></li>
-              </ul>
-              <button>
-                Connect wallet
-              </button>
-            </nav>
-          </div>
-        </div>
-      </header>
-
+      <NavBar />
       <main>
         <header>
           <div className="widthControlWrapper">
