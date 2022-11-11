@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { Land } from './components/lands'
 
 function App() {
 
@@ -26,8 +27,6 @@ function App() {
       </header>
 
       <main>
-
-
         <header>
           <div className="widthControlWrapper">
             <div className="widthControl">
@@ -71,6 +70,61 @@ function App() {
             </div>
           </div>
         </header>
+
+        <section className="comps-sec">
+          <div className="widthControlWrapper">
+            <div className="widthControl">
+              <div className="comps-container">
+                <img src="comp3.svg" alt="" />
+                <img src="/comp2.svg" alt="" />
+                <img src="/comp1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="widthControlWrapper">
+          <div className="widthControl">
+            <sectoin className="lands-sec">
+              <div>
+                <h2 className="lands-heading">Inspiration for your next adventure</h2>
+              </div>
+              <div className="lands">
+                <Land pic={"/land1.png"} />
+                <Land pic={"/land2.png"} />
+                <Land pic={"/land3.png"} />
+                <Land pic={"/land4.png"} />
+                <Land pic={"/land5.png"} />
+                <Land pic={"/land6.png"} />
+                <Land pic={"/land7.png"} />
+                <Land pic={"/land8.png"} />
+              </div>
+            </sectoin>
+          </div>
+        </div>
+
+        <section className="nfts-sect">
+          <div className="widthControlWrapper">
+            <div className="widthControl">
+              <div className="two-cols">
+                <div className="content-container">
+                  <h3 className="nft-heading">Metabnb NFTs</h3>
+                  <p className="txt-nm" style={{ color: "white" }}>Discover our NFT gift cards collection. Loyal customers gets
+                    amazing gift cards which are traded as NFTs.
+                    These NFTs gives our cutomer access to loads of our exclusive services.
+                  </p>
+                  <button className="nfts-button">learn more</button>
+                </div>
+                <div className="nft-images-container">
+                  <img src="/image 9.png" alt="" />
+                  <img src="/image 7.png" alt="" />
+                  <img src="/image 8.png" alt="image" />
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
     </div>

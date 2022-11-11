@@ -47,6 +47,14 @@ nav>button {
   border-radius: 10px;
 }
 
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
+  margin-bottom: 100px;
+}
+
 .two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -135,4 +143,86 @@ nav>button {
 
 .div6 {
   grid-area: 5 / 2 / 6 / 3;
+}
+
+
+.comps-sec {
+  background-color: var(--pr-color);
+  padding-block: 15px;
+}
+
+.comps-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lands-sec {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+}
+
+.lands-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.lands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+}
+
+.nfts-sect {
+  padding-block: 100px;
+  background-color: var(--pr-color);
+}
+
+.nft-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.nfts-button {
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  border-radius: 8px;
+  color: var(--pr-color);
+  padding: 14px 33px;
+  align-self: flex-start;
+}
+
+.nft-images-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 370px;
+
+}
+
+.nft-images-container>img {
+  width: min(90%, 300px);
+  position: absolute
+}
+
+.nft-images-container>img:first-child {
+  top: 0;
+  right: 50px
+}
+
+.nft-images-container>img:nth-child(2) {
+  bottom: 0;
+  right: 200px
+}
+
+.nft-images-container>:last-child {
+  bottom: 0;
+  right: 0
 }

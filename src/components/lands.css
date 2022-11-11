@@ -1,0 +1,36 @@
+.lands-article {
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.land-img-container {
+    margin: 16px;
+}
+
+.land-img-container>img {
+    width: 100%;
+}
+
+.land-details {
+    padding-inline: 16px;
+}
+
+.land-details p {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: #434343;
+}
+
+.land-details>div {
+    display: flex;
+    justify-content: space-between;
+}
