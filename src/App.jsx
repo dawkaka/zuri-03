@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Land } from './components/lands'
+import { Footer } from './components/footer'
 
 function App() {
 
@@ -36,7 +37,7 @@ function App() {
                   <h1 className="hero-heading">
                     Rent a <span className="tx-st">Place</span>
                     away from <span className="tx-st">Home</span> in the
-                    <span className="tx-st">Meterverse</span>
+                    <span className="tx-st"> Meterverse</span>
                   </h1>
                   <p className="tx-nm">
                     we provide you access to luxury and affordable houses in the metaverse,
@@ -85,7 +86,7 @@ function App() {
 
         <div className="widthControlWrapper">
           <div className="widthControl">
-            <sectoin className="lands-sec">
+            <section className="lands-sec">
               <div>
                 <h2 className="lands-heading">Inspiration for your next adventure</h2>
               </div>
@@ -99,7 +100,7 @@ function App() {
                 <Land pic={"/land7.png"} />
                 <Land pic={"/land8.png"} />
               </div>
-            </sectoin>
+            </section>
           </div>
         </div>
 
@@ -126,7 +127,7 @@ function App() {
           </div>
         </section>
       </main>
-
+      <Footer />
     </div>
   )
 }

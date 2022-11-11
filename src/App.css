@@ -28,6 +28,12 @@ header {
   width: min(100vw, 1280px);
 }
 
+@media screen and (max-width: 1280px) {
+  .widthControl {
+    padding-inline: 10px;
+  }
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -42,6 +48,16 @@ nav>ul {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1280px) {
+  .widthControl {
+    padding-inline: 10px;
+  }
+
+  nav>ul {
+    display: none;
+  }
+}
+
 nav>button {
   padding: 15px 26px 13px 27px;
   border-radius: 10px;
@@ -52,7 +68,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 67px;
-  margin-bottom: 100px;
 }
 
 .two-cols {
@@ -65,6 +80,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 48px
+}
+
+@media screen and (max-width: 750px) {
+
+  .two-cols {
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+  }
 }
 
 .hero-heading {
@@ -102,7 +125,7 @@ main {
 }
 
 .hero-search-container>input {
-  width: 390px;
+  width: 80%;
   background: rgba(247, 247, 247, 0.1);
   border: 1px solid #A3A3A3;
   border-radius: 8px 0px 0px 8px;
@@ -110,15 +133,26 @@ main {
 }
 
 .hero-search-container>button {
+  width: 30%;
   border-radius: 0px 8px 8px 0px;
-  padding: 17px 87px;
+  padding: 17px 15px;
 }
 
 .hero-images-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
   place-items: end;
+  overflow-x: hidden;
+}
+
+.hero-images-container>div {
+  width: 98%;
+}
+
+.hero-images-container img {
+  width: 100%;
 }
 
 .div1 {
@@ -154,6 +188,9 @@ main {
 .comps-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px
 }
 
 .lands-sec {
@@ -178,8 +215,25 @@ main {
   grid-gap: 24px;
 }
 
+@media screen and (max-width: 750px) {
+  .hero-images-container {
+    place-items: center;
+    overflow-x: hidden;
+  }
+
+  .lands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:450px) {
+  .lands {
+    grid-template-columns: 1fr;
+  }
+}
+
 .nfts-sect {
-  padding-block: 100px;
+  padding-block: 110px;
   background-color: var(--pr-color);
 }
 
@@ -204,12 +258,17 @@ main {
   display: grid;
   place-items: center;
   height: 370px;
-
 }
 
 .nft-images-container>img {
-  width: min(90%, 300px);
+  width: min(70%, 300px);
   position: absolute
+}
+
+@media screen and (max-width: 750px) {
+  .nft-images-container {
+    display: none;
+  }
 }
 
 .nft-images-container>img:first-child {
