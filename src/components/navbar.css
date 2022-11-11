@@ -1,26 +1,168 @@
+#header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 2;
+    padding-block: 23px;
+    margin-bottom: 70px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>button {
+    padding: 15px 26px 13px 27px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    nav>div:first-child {
+        width: 20%
+    }
+
+    nav>button {
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+    }
+}
+
+
+
+.sm-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s;
+    background-color: var(--pr-color);
+    color: white;
+}
+
+.sm-nav>* {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.close-menu {
+    position: absolute;
+    right: 20px;
+}
+
+.close-menu>div {
+    background-color: white;
+    width: 25px;
+    height: 2px;
+}
+
+.close-menu .bar1 {
+    transform: translate(0, 4px) rotate(45deg);
+}
+
+.close-menu .bar3 {
+    transform: translate(0, -4px) rotate(-45deg);
+}
+
+.sm-nav button {
+    background-color: white;
+    color: var(--pr-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sm-nav ul li {
+    margin-bottom: 15px;
+}
+
+.menu-show {
+    height: 60vh;
+    width: 80vw;
+    padding: 25px 100px 25px 25px;
+
+}
+
+.menu-show>* {
+    opacity: 1;
+}
+
+@media screen and (max-width:750px) {
+    nav>div:first-child {
+        width: auto
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    nav>button {
+        display: none;
+    }
+
+    .menu-container {
+        display: block !important;
+    }
+}
+
 .menu-container {
     display: inline-block;
     cursor: pointer;
+    display: none;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
+    width: 45px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+    border-radius: 5px;
 }
 
-.menu-change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+
+@media screen and (max-width: 350px) {
+    nav>div:first-child {
+        width: 50%
+    }
 }
 
-.menu-change .bar2 {
-    opacity: 0;
+
+.connect-item {
+    background: #F8F9FA;
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    cursor: pointer;
 }
 
-.menu-change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+.connect-item>div {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+
+.connect-item h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
 }

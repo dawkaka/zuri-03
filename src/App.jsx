@@ -13,7 +13,7 @@ function App() {
       <main>
         <header>
           <div className="widthControlWrapper">
-            <div className="widthControl">
+            <div className="widthControl" style={{ paddingRight: 0 }}>
               <div className="two-cols hero-container">
 
                 <div className="content-container">
