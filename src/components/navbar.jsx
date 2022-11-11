@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import "./navbar.css"
 
 export const NavBar = () => {
@@ -81,7 +82,7 @@ export const NavBar = () => {
                             </div>
                             <ul>
                                 <li><a href="" className="nav-link">Home</a></li>
-                                <li><a href="/place-to-stay" className="nav-link">Place to stay</a></li>
+                                <li><Link to="/place-to-stay">Place to stay</Link></li>
                                 <li><a href="" className="nav-link">NFTs</a></li>
                                 <li><a href="" className="nav-link">Community</a></li>
                             </ul>
@@ -103,7 +104,7 @@ export const NavBar = () => {
                                 </button>
                                 <ul>
                                     <li><a href="" className="nav-link">Home</a></li>
-                                    <li><a href="/place-to-stay" className="nav-link">Place to stay</a></li>
+                                    <li><Link to="/place-to-stay">Place to stay</Link></li>
                                     <li><a href="" className="nav-link">NFTs</a></li>
                                     <li><a href="" className="nav-link">Community</a></li>
                                 </ul>

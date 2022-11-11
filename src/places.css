@@ -1,0 +1,47 @@
+.tab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.table-categories {
+    display: flex;
+    width: min(70%, 600px);
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    overflow-x: auto;
+    gap: 20px;
+    padding-inline: 10px;
+}
+
+.table-categories>p {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.location-filter {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border: 1px solid #B4B4B4;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+.location-filter input {
+    outline: none;
+    padding: 9px;
+    width: 80px;
+    border: none;
+}
+
+@media screen and (max-width: 400px) {
+    .location-filter input {
+        outline: none;
+        padding: 9px;
+        width: 50px;
+        border: none;
+    }
+}

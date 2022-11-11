@@ -212,15 +212,18 @@ main {
   grid-gap: 24px;
 }
 
+@media screen and (max-width:850px) {
+  .lands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 750px) {
   .hero-images-container {
     place-items: center;
     overflow-x: hidden;
   }
 
-  .lands {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media screen and (max-width:450px) {
