@@ -53,10 +53,28 @@ main {
   grid-column-gap: 43px
 }
 
+.hero-container {
+  grid-template-columns: 3fr 2fr;
+  column-gap: 100px;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;
   gap: 48px
+}
+
+@media screen and (max-width:1000px) {
+  .hero-container {
+    grid-template-columns: 3fr 2fr;
+    column-gap: 43px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -64,6 +82,10 @@ main {
   .two-cols {
     grid-template-columns: 1fr;
     grid-gap: 100px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -116,26 +138,27 @@ main {
 }
 
 .hero-images-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-gap: 20px;
-  place-items: end;
+  grid-gap: 10px;
+  margin-left: auto;
   overflow-x: hidden;
 }
 
 
-.hero-images-container>div {
-  width: fit-content
-}
-
 .hero-images-container img {
-  width: auto;
+  width: 100%;
 }
 
 @media screen and (max-width:750px) {
   .hero-images-container>div {
     width: 98%;
+  }
+
+  .hero-container {
+    grid-column-gap: 40px;
   }
 
   .hero-images-container img {
@@ -269,18 +292,11 @@ main {
   position: relative;
   display: grid;
   place-items: center;
-  height: 370px;
+
 }
 
 .nft-images-container>img {
-  width: min(70%, 300px);
-  position: absolute
-}
-
-@media screen and (max-width: 750px) {
-  .nft-images-container {
-    display: none;
-  }
+  width: min(100%, 500px);
 }
 
 .nft-images-container>img:first-child {

@@ -10,8 +10,8 @@ export const Footer = () => {
                 <div className="widthControl">
                     <div className="footer-content">
                         <div className="footer-logos-container">
-                            <div>
-                                <img src="/footerlogo.svg" />
+                            <div className="logo-container">
+                                <img src="/footerlogo.svg" style={{ width: "max(100%,150px)", maxWidth: "200px" }} />
                             </div>
 
                             <div>

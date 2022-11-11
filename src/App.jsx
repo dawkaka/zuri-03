@@ -30,22 +30,23 @@ function App() {
                   </div>
                 </div>
 
-                <div className="hero-images-container">
-                  <div className="div1"></div>
-                  <div className="div2">
-                    <img src='/image 3.png' />
+                <div>
+                  <div className="hero-images-container">
+                    <div className="div1"></div>
+                    <div className="div2">
+                      <img src='/image 3.png' />
+                    </div>
+                    <div className="div3">
+                      <img src='/image 4.png' />
+                    </div>
+                    <div className="div4">
+                      <img src='/image 5.png' />
+                    </div>
+                    <div className="div5">
+                      <img src='/image 6.png' />
+                    </div>
+                    <div className="div6"></div>
                   </div>
-                  <div className="div3">
-                    <img src='/image 4.png' />
-                  </div>
-                  <div className="div4">
-                    <img src='/image 5.png' />
-                  </div>
-                  <div className="div5">
-                    <img src='/image 6.png' />
-                  </div>
-                  <div className="div6"></div>
-
                 </div>
 
               </div>
@@ -98,10 +99,7 @@ function App() {
                   <button className="nfts-button">learn more</button>
                 </div>
                 <div className="nft-images-container">
-                  <img src="/image 9.png" alt="" />
-                  <img src="/image 7.png" alt="" />
-                  <img src="/image 8.png" alt="image" />
-
+                  <img src="/useless.png" alt="" />
                 </div>
               </div>
             </div>

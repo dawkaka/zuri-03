@@ -27,7 +27,7 @@ nav>button {
 }
 
 @media screen and (max-width: 850px) {
-    nav>div:first-child {
+    .logo-container {
         width: 20%
     }
 
@@ -99,7 +99,7 @@ nav>button {
 }
 
 @media screen and (max-width:750px) {
-    nav>div:first-child {
+    .logo-container {
         width: auto
     }
 
@@ -135,7 +135,7 @@ nav>button {
 
 
 @media screen and (max-width: 350px) {
-    nav>div:first-child {
+    .logo-container {
         width: 50%
     }
 }

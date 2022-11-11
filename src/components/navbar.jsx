@@ -77,11 +77,11 @@ export const NavBar = () => {
                 <div className="widthControlWrapper">
                     <div className="widthControl">
                         <nav>
-                            <div>
+                            <div className="logo-container">
                                 <img src='./Group.svg' style={{ width: "100%" }} />
                             </div>
                             <ul>
-                                <li><a href="" className="nav-link">Home</a></li>
+                                <li><Link to="/">Home</Link></li>
                                 <li><Link to="/place-to-stay">Place to stay</Link></li>
                                 <li><a href="" className="nav-link">NFTs</a></li>
                                 <li><a href="" className="nav-link">Community</a></li>
@@ -103,7 +103,7 @@ export const NavBar = () => {
                                     Connect wallet
                                 </button>
                                 <ul>
-                                    <li><a href="" className="nav-link">Home</a></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li><Link to="/place-to-stay">Place to stay</Link></li>
                                     <li><a href="" className="nav-link">NFTs</a></li>
                                     <li><a href="" className="nav-link">Community</a></li>
