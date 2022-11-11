@@ -14,9 +14,15 @@ export const NavBar = ({ target }) => {
         modalRef.current.style.display = "block"
     }
 
+    const modalClick = (e) => {
+        if (e.target.id === "modal") {
+            modalRef.current.style.display = "none"
+        }
+    }
+
     return (
         <>
-            <div ref={modalRef} style={{ display: "none", position: "fixed", width: "100%", height: "100%", zIndex: 5, background: "rgba(64, 64, 64, 0.3)" }}>
+            <div id="modal" onClick={modalClick} ref={modalRef} style={{ display: "none", position: "fixed", width: "100%", height: "100%", zIndex: 5, background: "rgba(64, 64, 64, 0.3)" }}>
 
                 <div style={{
                     width: "min(95%, 600px)", borderRadius: "16px",
