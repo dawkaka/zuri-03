@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar target="Home" />
       <main>
         <header>
           <div className="widthControlWrapper">

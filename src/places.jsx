@@ -8,7 +8,7 @@ import { NavBar } from './components/navbar'
 export const Places = () => {
     return (
         <div className="App">
-            <NavBar />
+            <NavBar target="Stay" />
             <main style={{ paddingBottom: "92px" }}>
                 <div className="tab-container">
                     <div className="table-categories">
