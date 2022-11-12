@@ -24,7 +24,7 @@ function App() {
 
                 <div className="content-container">
                   <h1 className="hero-heading">
-                    Rent a <span className="tx-st">Place</span>
+                    Rent a <span className="tx-st">Place </span>
                     away from <span className="tx-st">Home</span> in the
                     <span className="tx-st"> Meterverse</span>
                   </h1>
