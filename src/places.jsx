@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./App.css"
 import "./places.css"
 import { Footer } from './components/footer'
@@ -6,6 +6,14 @@ import { Land } from './components/lands'
 import { NavBar } from './components/navbar'
 
 export const Places = () => {
+    const scrollRef = useRef(false)
+
+    useEffect(() => {
+        if (!scrollRef.current) {
+            window.scrollTo({ top: 0 })
+            scrollRef.current = true
+        }
+    })
     return (
         <div className="App">
             <NavBar target="Stay" />
